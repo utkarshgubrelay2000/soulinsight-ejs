@@ -3385,3 +3385,15 @@ body.dark {
 
 
 }
+
+.topnav .logo{
+  width: auto;
+}
+
+.logo-text{
+  width: auto;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 1.1;
+}
