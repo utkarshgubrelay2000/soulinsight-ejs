@@ -847,7 +847,7 @@ span, a, a:hover {
 /* ====================== [ End Menu & Navbar ] ====================== */
 /* ====================== [ 09 Start Slider ] ====================== */
 .slider.fixed-slider {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0; }
