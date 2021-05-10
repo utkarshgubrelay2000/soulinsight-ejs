@@ -1333,7 +1333,7 @@ span, a, a:hover {
   background-color: #080808;
   color: #fff; }
   .about.blc:before {
-    background-image: url(../img/giphynoise.png);
+    /* background-image: url(../img/giphynoise.png); */
     background-repeat: repeat;
     background-size: 40%;
     opacity: .015; }
@@ -2667,7 +2667,7 @@ span, a, a:hover {
     .call-action.gray .tlink {
       border-bottom: 1px solid #333; }
   .call-action:before {
-    background-image: url(../img/giphy.gif);
+    /* background-image: url(../img/giphy.gif); */
     background-repeat: repeat;
     opacity: .04; }
   .call-action.nogif {
