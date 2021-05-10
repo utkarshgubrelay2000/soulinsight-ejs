@@ -3367,6 +3367,13 @@ body.dark {
   width : 58vw ;
 }
 
+.offer-image{
+  height: 45vh;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
 @media only screen and (max-width: 600px) {
 
   .modal-content{
@@ -3384,6 +3391,14 @@ body.dark {
   }
 
 
+  .offer-image{
+    height: 30vh;
+    object-fit: cover;
+    overflow: hidden;
+
+  }
+
+
 }
 
 .topnav .logo{
@@ -3396,4 +3411,10 @@ body.dark {
   font-size: 16px;
   color: white;
   line-height: 1.1;
+}
+
+
+
+.flex-wrap-reverse{
+  /* flex-wrap: wrap-reverse; */
 }
