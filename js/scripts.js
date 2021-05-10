@@ -608,9 +608,6 @@ $(window).scroll(function () {
 
 function videoPlayPause() {
   const video = document.getElementById("brandVideo");
-
-
-
   if (video.paused) {
     setTimeout(() => {
       video.play();
@@ -618,4 +615,11 @@ function videoPlayPause() {
   } else {
     video.pause();
   }
+}
+
+
+
+function videoPause() {
+  const video = document.getElementById("brandVideo");
+    video.pause();
 }

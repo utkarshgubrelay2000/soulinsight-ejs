@@ -3354,3 +3354,34 @@ body.dark {
   background-color: white;
 }
 
+.modal-content{
+  margin-left: -10vw;
+  width : auto ;
+}
+
+.modal-body{
+  width: 60vw;
+}
+
+#brandVideo{
+  width : 58vw ;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .modal-content{
+    margin-left: 2vw;
+    width : auto ;
+
+  }
+  
+  .modal-body{
+    width: 90vw;
+  }
+  
+  #brandVideo{
+    width : 84vw ;
+  }
+
+
+}
