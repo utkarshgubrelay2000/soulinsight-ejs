@@ -1,0 +1,33 @@
+.contact-branches-section{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.contact-branches-section h5 ,h6{
+    color: #07abcd;font-size: 1.6rem;
+}
+
+.contact-div{
+    padding: 50px;
+}
+
+.map-icon{
+    width: 30px;
+  color: #07abcd !important;
+
+}
+
+.contact-branches-section h6{
+   padding: 10px;
+   padding-left: 0;
+}
+
+.contact-header{
+    height: 70vh;
+    margin-bottom: 10vh;
+    color: white;
+    background-image: url('../images/contact-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}

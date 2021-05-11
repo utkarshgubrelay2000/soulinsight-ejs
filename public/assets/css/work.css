@@ -1,0 +1,181 @@
+.description-text{
+    color: #07ABCD;
+    margin: 40px;
+    margin-left: 0;
+    width: 50%;
+    font-weight: normal;
+}
+
+.work-card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  width: 70% !important;
+}
+
+
+.work-card-container div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-card{
+    border: 2px solid #07ABCD;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    height: 20vh;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.work-card-heading{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+    color: #07ABCD;
+}
+
+.work-card p{
+    font-size: 14px;
+    margin: 0;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.work-description-container{
+    width: 25% !important;
+   
+    
+}
+
+.single-work-card{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 16%) 4px 4px 6px 3px;
+    padding: 15px;
+    transition: all 700ms ease 0s;
+    margin: 0px;
+    border-color: transparent;
+    height: 45vh;
+}
+
+.work-content{
+    align-items: center;
+    text-align: center;
+}
+
+.work-content img{
+    width: 150px;
+}
+
+.workcontent-description{
+    color: #07ABCD !important;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+
+.main-image-work{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-card-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-card{
+    width: 40% !important ; 
+    height: 20vh;
+}
+
+.work-section{
+    height: 80vh;
+}
+
+
+.lab-card h6{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lab-card h6:nth-child(3){
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.work-card:hover , .work-card :active{
+    background-color: #07ABCD;
+    color: white;
+}
+
+.work-card:hover .work-card-heading{
+    color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    .work-card-container{
+        width: 100% !important;
+    }
+
+
+    .justify-content-space-between{
+        display: block;
+    }
+
+    .image-card-container{
+        margin-top: 5vh !important;
+    }
+    
+    
+.work-card{
+    width: 45%;
+    margin: 2%;
+    height: 15vh;
+}
+
+.description-text{
+    width: 100%;
+    font-size: 16px;
+}
+
+.work-card p{
+    font-size: 9px;
+}
+
+.work-section{
+    height: auto;
+}
+
+.work-description-container{
+    width: auto !important;
+    margin : 20px ;
+}
+
+
+}

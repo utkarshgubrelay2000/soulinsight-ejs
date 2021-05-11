@@ -1,0 +1,129 @@
+.footer{
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.footer .info-box{
+    background-color: #07abcd;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.footer .counter-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .counter-box p{
+    font-size: 28px;
+    color: #fff;
+}
+.footer .counter-box span{
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+.footer .counter-box p{
+    font-size: 18px;
+    color: #ffffff;
+}
+.footer .connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+
+}
+.footer .connect span{
+    font-weight: normal;
+    color: #07abcd;
+    font-size: 30px;
+}
+.footer .connect a{
+    font-weight: bold;
+    color: #5d5b5a;
+}
+.myfooter{
+    background-color: #07abcd;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.myfooter span{
+    color: #fff;
+}
+.myfooter h6{
+    color: #fff;
+}
+.myfooter a{
+    color: #fff;
+}
+.myfooter p{
+    font-size: 12px;
+    color: #fff;
+}
+
+.myfooter .footer-heading{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#lab_social_icon_footer {
+    padding: 40px 0;
+}
+  
+#lab_social_icon_footer a {
+color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+#lab_social_icon_footer #social-fb:hover {
+color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+color: #f39c12;
+}
+
+
+
+.connect-cta{
+    bottom : 0;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .footer .connect{
+        padding:  20px 10%;
+    }
+
+}

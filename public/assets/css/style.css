@@ -1,0 +1,471 @@
+    
+
+html,body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 12px;
+    scroll-behavior: smooth;
+   background-color: rgb(255, 255, 255) !important;
+}
+
+.main-section{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.home-section{
+    background-image: url('http://new.sattva-labs.com/wp-content/uploads/2020/06/headder.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 120vh;
+}
+
+.home-section-overlay{
+    background: rgba(7,171,205,0.70);
+    height: 100%;
+    width: 100%;
+}
+
+.homepage-container{
+height: 50vh;
+padding-top: 30vh;
+display: flex;
+align-items: center;
+}
+
+
+
+.navbar-container{
+    background-color: transparent !;
+    
+}
+
+.custom-nav-ul{
+    margin-left: auto;
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.custom-nav-ul .nav-item{
+    padding: 20px;
+}
+
+.custom-nav-ul .nav-item .nav-link{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cta-heading{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+}
+
+.main-heading{
+    font-weight: bolder;
+    font-size: 56px;
+}
+
+.cta-button{
+    border-radius: 50px;
+    padding: 16px 32px;
+    background: white !important;
+    border: none;
+    color: #07ABCD !important;
+    font-weight: bold;
+    position: relative;
+    top: 20vh;
+    font-size: 16px;
+    left: 15vw;
+}
+.cta-btn{
+    border-radius: 50px;
+   
+color: white !important;
+    border: none;
+   background-color: #07ABCD !important;
+    font-weight: bold;
+  padding: 20px;
+    width: 120px;
+}
+
+.services-icon-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+
+}
+
+
+.custom-btn{
+    border-radius: 50px;
+    padding: 16px 32px;
+    background: white !important;
+    border: none;
+    color: #07ABCD !important;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+.services-container{
+    background-color: rgb(255, 255, 255);
+    height: 25vh;
+    position: relative;
+    top: -45vh;
+}
+
+.align-item-center{
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center{
+    display: flex;
+justify-content: center;
+}
+
+
+
+.icon-box{
+    margin: 20px;
+}
+
+.icon-box-text{
+    display: block;
+}
+
+.icon-box-text img{
+    width: 32px;
+}
+
+.icon-box-text h4{
+    color: #07ABCD !important;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.icon-box-text h4::after{
+    content: ' ';
+    display: block;
+    margin: 3px 0 0 0;
+    border: 2px solid #07ABCD;
+    width: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.icon-box-text h6{
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.icon-box-cta{
+    top: 5vh;
+}
+
+.icon-box-text{
+    padding-left: 30%;
+}
+
+
+.cta-second{
+    position: relative;
+    background-color: rgb(255, 255, 255) !important;
+    top: -40vh;
+    left: 72% ;
+}
+
+
+.about-section{
+    position: relative;
+    top: -15vh;
+    height: 50vh;
+    
+}
+
+.about-container{
+    height: 40vh;
+    background-color: white;
+}
+
+.div-banner{
+    background-image: url('http://new.sattva-labs.com/wp-content/uploads/2020/06/design-agency-bangalore.jpg');
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.div-banner h4{
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+
+.div-banner-text{
+    display: block;
+}
+
+.about-text-card{
+    height: 50vh;
+    border: 2px solid #07ABCD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.about-text-card span{
+    font-weight: bold;
+}
+
+.about-text-card h3{
+    color: rgba(105, 105, 105, 0.692);
+    font-weight: normal;
+}
+
+.abouttextcard-button{
+background-color: #07ABCD !important;
+color: white !important;
+position: relative;
+height: 8vh;
+display: flex;
+align-items: center;
+justify-self: center;
+bottom: -4vh;
+}
+
+
+@media screen and (max-width : 800px) {
+    
+.services-container{
+    top: 0vh;
+    height: auto;
+    display: block;
+   
+}
+
+.about-section{
+    height: 150vh;
+}
+
+
+.icon-box-text{
+margin: 20px;
+}
+
+.home-section{
+    height: 100vh;
+}
+
+.home-section .cta-heading{
+    font-size: 28px;
+  
+}
+
+.home-section .main-heading{
+    font-size: 44px;
+}
+
+.cta-button{
+    top: 15vh;
+}
+
+.cta-second{
+    top: 10vh;
+    left: 25%;
+    
+    font-size: 14px;
+}
+
+.no-deco{
+    text-decoration: none !important;
+}
+
+.icon-box-text h4::after{
+    content: ' ';
+    display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+    border: 2px solid #07ABCD;
+    width: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.services-icon-container{
+    height: 50vh;
+}
+
+.icon-box-cta{
+    top: 30vh;
+}
+
+.about-section{
+    top: 0;
+}
+
+.about-text-card{
+    margin: 30px;
+    height: 40vh;
+}
+
+.div-banner-container{
+    padding: 0 !important;
+}
+
+.div-banner{
+    height: 40vh;
+}
+
+
+}
+
+
+.testimonial-heading-div{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.testimonial-heading-div h2{
+    color: #07ABCD;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.testimonial-text-card{
+    background-color: rgba(7,171,205,0.08)!important;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.testimonial-text-card h5{
+    color: #07abcd;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.f-60{
+    font-size: 60px !important;
+    padding: 20px;
+}
+.f-20{
+    font-size: 25px;
+    color: #07ABCD;
+
+}
+.m-top-20{
+    margin-top: 80px;
+}
+.ck-editor__editable_inline {
+    min-height: 100px;
+    position: relative;
+}
+.input-blog{
+    height: 25px;
+   border: none;
+    color: black;
+    box-shadow: 2px 2px 2px grey;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+}
+.pad-30{
+padding: 30px;
+}
+.login-div{
+    border: #07ABCD 2px solid;
+    padding: 20px;
+}
+.testimonial-section{
+    margin-top: 10vh;
+    background-image: url('../images/bracket.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 10vh;
+    top: 0;
+    margin-bottom: 20vh;
+}
+
+
+
+
+.full-container{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+}
+
+
+.line{
+    height: 20vh;
+    width: 5px;
+    background-color: #07abcd;
+}
+
+
+
+.inactive-card:hover{
+    min-height: 450px;
+    background-color: rgb(7, 171, 205);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px 20px 15px;
+    color: white !important;
+}
+
+
+.inactive-card:hover .heading{
+    color: white !important;
+}
+
+.inactive-card:hover  img{
+filter: invert(1);
+}
+
+.inactive-banner:hover {
+    padding: 60px 10px;
+    background-color: #07ABCD;
+    width: 100%;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-paragraph{
+    color: #07abcd; font: Poppins; font-size: 18px; margin-top: 10px;
+}
+
+.inactive-banner:hover .banner-paragraph{
+    color: white !important;
+}
+
+.inactive-banner:hover .banh4 {
+    color: white !important;
+}
+.inactive-banner:hover .banh4:after {
+    border-color: white !important;
+}

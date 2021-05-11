@@ -1,0 +1,240 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 9999;
+    position: fixed;
+}
+
+
+.toggler{
+    height: 25px;
+    width: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+
+.toggler .line{
+    height: 3px ;
+    width: 28px;
+    background-color: white;
+}
+
+.navbar-link a{
+    font-size: 16px ;
+}
+
+.toggler.active{
+    transition: all 1s ease-in-out;
+    transition-delay: 200ms;
+    transform: rotate(360deg);
+}
+
+
+
+@keyframes spinToggler {
+    from{
+        color: white;
+    }
+    to{
+        transform: rotate(360deg);
+       
+    }
+
+}
+
+
+
+.toggler.inactive{
+    /* animation: spinTogglerReverse 1s ease-in-out; */
+    animation-fill-mode: forwards;
+    transition: all 1s ease-in-out;
+}
+
+.toggler.active>.line:nth-child(3){
+  
+    display: none;
+  
+}
+
+.toggler.active>.line:nth-child(1){
+    transition: all 0.5s ease-in-out;
+    transition-delay: 200ms;
+    transform: rotate(
+45deg
+);
+}
+
+.toggler.active>.line:nth-child(2){
+    transition: all 0.5s ease-in-out;
+    transition-delay: 200ms;
+    transform: rotate(-45deg) translate3d(8px,-9px,-6px);
+}
+
+
+
+
+@keyframes spinTogglerReverse {
+    from{
+        color: white;
+    }
+    to{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+
+}
+
+
+
+
+.navbar-ul{
+list-style-type: none;
+display: flex;
+justify-content: space-around;
+}
+
+.navbar-item{
+padding : 2px;
+padding-top: 20px;
+}
+
+.navbar-link{
+    color: white;
+    padding : 30px 20px;
+    padding-top: 30px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.navbar-link:hover{
+    color: white;
+}
+
+.navbar-link:active{
+    color: yellow;
+}
+
+.navbar-item  .active{
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(7, 172, 205);
+ 
+}
+
+
+
+
+.showmobilenav{
+animation: showNavbar 1s ease-in;
+animation-fill-mode: forwards;
+}
+
+.hidemobilenav{
+animation: hideNavbar 1s ease-in;
+animation-fill-mode: forwards;
+}
+
+@keyframes showNavbar {
+    from{
+        color: white;
+     
+    }
+    to{
+  
+transform: translateY(0%);
+       opacity: 1;
+    }
+
+}
+
+@keyframes hideNavbar {
+    from{
+        color: white;
+     
+    }
+    to{
+   
+transform: translateY(-130%);
+       opacity: 0;
+    }
+
+}
+
+.hidemobilenav{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+.desktop-nav{
+    display: none;
+}
+
+.navbar-container{
+   padding-top: 10px;
+}
+
+.navbar-ul{
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    background-color: white;
+padding: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+transform: translateY(-130%);
+   
+}
+
+.toggler{
+    display: flex;
+}
+
+.navbar-item .navbar-link {
+    color: #333;
+}
+
+.navbar-link .active::before{
+    content: '';
+    height: 10vh;
+    background-color: cadetblue;
+}
+
+.navbar-item  .active{
+    background-color: rgb(7, 172, 205);
+  width: 100%;
+    color: white;
+    padding: 22px;
+}
+
+
+}
+
+
+
+
+.navbar-white{
+    background-color: rgb(255, 255, 255) !important;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    height: 11vh;
+}
+
+.navbar-white .navbar-link{
+    color: black;
+}
+
+.navbar-white .navbar-item .active{
+    background-color: #07ABCD;
+    color: white;
+}

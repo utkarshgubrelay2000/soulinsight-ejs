@@ -1,0 +1,987 @@
+@media only screen and (max-width: 767px) {
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .default-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  .optional-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  .section-title span {
+    font-size: 18px;
+  }
+  .section-title h2 {
+    font-size: 28px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 5px 0 0;
+  }
+  .mean-container a.meanmenu-reveal span {
+    display: block;
+    background: #000;
+    height: 4px;
+    margin-top: -5px;
+    border-radius: 3px;
+    position: relative;
+    top: 8px;
+  }
+  .mean-container .mean-bar {
+    background-color: unset;
+    border-bottom: none;
+  }
+  .mean-container .mean-nav {
+    margin-top: 40px;
+  }
+  .main-responsive-nav .logo img {
+    position: relative;
+    z-index: 99999;
+  }
+  .others-option-for-responsive .dot-menu {
+    top: -30px;
+  }
+  .others-option-for-responsive .container .container {
+    right: 20px;
+    max-width: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .others-option-for-responsive .option-inner .others-options {
+    margin-left: 0;
+  }
+  .others-option-for-responsive .option-inner .others-options .option-item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item:last-child {
+    margin-bottom: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item
+    .language-switcher
+    .dropdown-menu {
+    margin-top: 10px;
+  }
+  .others-option-for-responsive .option-inner .others-options.d-flex {
+    display: block !important;
+  }
+  .main-banner-item {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: unset;
+    background-color: #e7ddf4;
+  }
+  .main-banner-item .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .main-banner-content {
+    text-align: center;
+    margin: auto;
+  }
+  .main-banner-content h1 {
+    font-size: 30px;
+  }
+  .main-banner-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .main-banner-shape .banner-bg-shape {
+    display: none;
+  }
+  .main-banner-shape .shape-1 {
+    display: none;
+  }
+  .main-banner-shape .shape-2 {
+    display: none;
+  }
+  .main-banner-shape .shape-3 {
+    display: none;
+  }
+  .main-banner-shape .shape-4 {
+    display: none;
+  }
+  .who-we-are-image {
+    margin-bottom: 30px;
+  }
+  .who-we-are-content span {
+    font-size: 18px;
+  }
+  .who-we-are-content h3 {
+    font-size: 25px;
+  }
+  .who-we-are-content .who-we-are-list li {
+    -webkit-box-flex: unset;
+    -ms-flex: unset;
+    flex: unset;
+    max-width: unset;
+    margin-right: 20px;
+  }
+  .who-we-are-shape {
+    display: none;
+  }
+  .single-class .class-content {
+    padding: 40px 15px 20px;
+  }
+  .single-class .class-content h3 {
+    font-size: 20px;
+  }
+  .single-class .class-content p {
+    font-size: 15px;
+  }
+  .single-class .class-content .class-list li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .single-class .class-content .class-list li span {
+    font-size: 14px;
+  }
+  .class-shape .shape-1 {
+    display: none;
+  }
+  .class-shape .shape-2 {
+    display: none;
+  }
+  .value-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .value-item .value-content span {
+    font-size: 18px;
+  }
+  .value-item .value-content h3 {
+    font-size: 25px;
+  }
+  .value-item .value-inner-content h4 {
+    font-size: 20px;
+  }
+  .value-item .value-inner-content p {
+    font-size: 14px;
+  }
+  .value-shape .shape-1 {
+    display: none;
+  }
+  .value-shape .shape-2 {
+    display: none;
+  }
+  .value-shape .shape-3 {
+    display: none;
+  }
+  .single-teacher .content h3 {
+    font-size: 22px;
+  }
+  .testimonials-item .testimonials-item-box {
+    padding: 25px;
+  }
+  .testimonials-item .testimonials-item-box .info-box h3 {
+    font-size: 20px;
+  }
+  .testimonials-slides.owl-theme .owl-nav [class*="owl-"] {
+    display: none;
+  }
+  .event-box-item {
+    text-align: center;
+  }
+  .event-box-item .event-image {
+    margin-bottom: 25px;
+  }
+  .event-box-item .event-content h3 {
+    font-size: 22px;
+  }
+  .event-box-item .event-content .event-list {
+    margin-top: 15px;
+  }
+  .event-box-item .event-content .event-list li {
+    padding-left: 0;
+  }
+  .event-box-item .event-content .event-list li i {
+    position: relative;
+  }
+  .event-box-item .event-date {
+    margin-top: 10px;
+  }
+  .event-box-item .event-date h4 {
+    font-size: 45px;
+  }
+  .single-blog-item .blog-content {
+    padding: 20px;
+  }
+  .single-blog-item .blog-content .post-meta li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .single-footer-widget .logo h2 {
+    font-size: 40px;
+  }
+  .single-footer-widget p {
+    font-size: 15px;
+  }
+  .single-footer-widget.pl-5,
+  .single-footer-widget .px-5 {
+    padding-left: 0 !important;
+  }
+  .main-banner-image-wrap {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .main-banner-shape .shape-5 {
+    display: none;
+  }
+  .main-banner-shape .shape-6 {
+    display: none;
+  }
+  .who-we-are-image-wrap {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .single-activities .activities-content h3 {
+    font-size: 20px;
+  }
+  .single-facilities .facilities-content h3 {
+    font-size: 20px;
+  }
+  .facilities-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .feedback-slides .feedback-item .feedback-image {
+    margin-bottom: 30px;
+  }
+  .feedback-slides .feedback-item .feedback-content p {
+    font-size: 15px;
+  }
+  .feedback-slides.owl-theme .owl-nav {
+    display: none;
+  }
+  .partner-item img {
+    max-width: 100px;
+  }
+  .banner-child .child-1 {
+    display: none;
+  }
+  .banner-child .child-2 {
+    display: none;
+  }
+  .main-banner-shape .banner-bg-shape-2 {
+    display: none;
+  }
+  .single-fun-fact {
+    padding: 35px;
+  }
+  .single-fun-fact h3 {
+    font-size: 35px;
+  }
+  .choose-image {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .choose-image .choose-image-shape .shape-1 {
+    display: none;
+  }
+  .choose-image .choose-image-shape .shape-2 {
+    display: none;
+  }
+  .choose-image .choose-image-shape .shape-3 {
+    display: none;
+  }
+  .single-choose .content h3 {
+    font-size: 22px;
+  }
+  .quote-image {
+    height: 450px;
+  }
+  .quote-item {
+    padding: 20px;
+  }
+  .quote-item .content h3 {
+    font-size: 22px;
+  }
+  .newsletter-shape .shape-1 {
+    display: none;
+  }
+  .newsletter-shape .shape-2 {
+    display: none;
+  }
+  .newsletter-content {
+    margin-bottom: 20px;
+  }
+  .newsletter-content h2 {
+    font-size: 22px;
+  }
+  .newsletter-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+  }
+  .support-list-item li {
+    margin-right: 20px;
+  }
+  .support-list-item li img {
+    margin-bottom: 20px;
+    max-width: 50px;
+  }
+  .support-list-item li span {
+    font-size: 16px;
+  }
+  .single-teacher-content {
+    margin-bottom: 30px;
+  }
+  .single-teacher-content h3 {
+    font-size: 25px;
+  }
+  .single-teacher-content p {
+    font-size: 15px;
+  }
+  .single-choose-item {
+    margin-bottom: 30px;
+  }
+  .single-choose-item h3 {
+    font-size: 25px;
+  }
+  .overview-content {
+    padding: 20px;
+  }
+  .overview-content h3 {
+    font-size: 25px;
+  }
+  .page-banner-area {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .page-banner-content h2 {
+    font-size: 35px;
+  }
+  .apply-form {
+    padding: 20px 20px 35px;
+  }
+  .apply-form .content {
+    margin-bottom: 18px;
+    margin-top: 15px;
+  }
+  .apply-form .content h3 {
+    font-size: 25px;
+  }
+  .enrollment-image {
+    height: 450px;
+  }
+  .faq-image {
+    height: 450px;
+  }
+  .login-form {
+    padding: 25px 20px;
+  }
+  .login-form h2 {
+    font-size: 25px;
+  }
+  .login-form form .lost-your-password {
+    text-align: left;
+  }
+  .register-form {
+    padding: 25px 20px;
+  }
+  .register-form h2 {
+    font-size: 25px;
+  }
+  .error-content h3 {
+    font-size: 22px;
+  }
+  .coming-soon-content {
+    padding: 30px 25px;
+  }
+  .coming-soon-content #timer {
+    margin-top: 30px;
+  }
+  .coming-soon-content #timer div {
+    width: 100px;
+    height: 105px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .coming-soon-content h2 {
+    font-size: 25px;
+  }
+  .teacher-details-desc .teacher-desc-content h3 {
+    font-size: 25px;
+  }
+  .teacher-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .event-details-desc .event-desc-content h3 {
+    font-size: 25px;
+  }
+  .event-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .class-details-desc .class-desc-content h3 {
+    font-size: 25px;
+  }
+  .class-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .blog-details-desc .article-content h3 {
+    font-size: 20px;
+  }
+  .widget-area {
+    margin-top: 30px;
+  }
+  .contact-information {
+    margin-top: 30px;
+  }
+  .class-details-desc .class-details-tab .tabs li a {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  .default-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  .optional-btn {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  .section-title span {
+    font-size: 18px;
+  }
+  .section-title h2 {
+    font-size: 35px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 5px 0 0;
+  }
+  .mean-container a.meanmenu-reveal span {
+    display: block;
+    background: #000;
+    height: 4px;
+    margin-top: -5px;
+    border-radius: 3px;
+    position: relative;
+    top: 8px;
+  }
+  .mean-container .mean-bar {
+    background-color: unset;
+    border-bottom: none;
+  }
+  .mean-container .mean-nav {
+    margin-top: 40px;
+  }
+  .main-responsive-nav .logo img {
+    position: relative;
+    z-index: 99999;
+  }
+  .others-option-for-responsive .dot-menu {
+    top: -30px;
+  }
+  .others-option-for-responsive .container .container {
+    right: 20px;
+    max-width: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .others-option-for-responsive .option-inner .others-options {
+    margin-left: 0;
+  }
+  .others-option-for-responsive .option-inner .others-options .option-item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item:last-child {
+    margin-bottom: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item
+    .language-switcher
+    .dropdown-menu {
+    margin-top: 10px;
+  }
+  .others-option-for-responsive .option-inner .others-options.d-flex {
+    display: block !important;
+  }
+  .main-banner-item {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: unset;
+    background-color: #e7ddf4;
+  }
+  .main-banner-item .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .main-banner-content {
+    text-align: center;
+    margin: auto;
+  }
+  .main-banner-content h1 {
+    font-size: 45px;
+  }
+  .main-banner-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .main-banner-shape .banner-bg-shape {
+    display: none;
+  }
+  .main-banner-shape .shape-1 {
+    display: none;
+  }
+  .main-banner-shape .shape-2 {
+    display: none;
+  }
+  .main-banner-shape .shape-3 {
+    display: none;
+  }
+  .main-banner-shape .shape-4 {
+    display: none;
+  }
+  .who-we-are-image {
+    margin-bottom: 30px;
+  }
+  .who-we-are-shape {
+    display: none;
+  }
+  .single-class .class-content {
+    padding: 40px 15px 20px;
+  }
+  .single-class .class-content h3 {
+    font-size: 20px;
+  }
+  .single-class .class-content p {
+    font-size: 15px;
+  }
+  .single-class .class-content .class-list li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .single-class .class-content .class-list li span {
+    font-size: 14px;
+  }
+  .class-shape .shape-1 {
+    display: none;
+  }
+  .class-shape .shape-2 {
+    display: none;
+  }
+  .value-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .value-item .value-content span {
+    font-size: 18px;
+  }
+  .value-item .value-content h3 {
+    font-size: 25px;
+  }
+  .value-item .value-inner-content h4 {
+    font-size: 20px;
+  }
+  .value-item .value-inner-content p {
+    font-size: 14px;
+  }
+  .value-shape .shape-1 {
+    display: none;
+  }
+  .value-shape .shape-2 {
+    display: none;
+  }
+  .value-shape .shape-3 {
+    display: none;
+  }
+  .single-teacher .content h3 {
+    font-size: 22px;
+  }
+  .testimonials-item .testimonials-item-box {
+    padding: 25px;
+  }
+  .testimonials-item .testimonials-item-box .info-box h3 {
+    font-size: 20px;
+  }
+  .testimonials-slides.owl-theme .owl-nav [class*="owl-"] {
+    display: none;
+  }
+  .event-box-item {
+    text-align: center;
+  }
+  .event-box-item .event-image {
+    margin-bottom: 25px;
+  }
+  .event-box-item .event-content h3 {
+    font-size: 22px;
+  }
+  .event-box-item .event-content .event-list {
+    margin-top: 15px;
+  }
+  .event-box-item .event-content .event-list li {
+    padding-left: 0;
+  }
+  .event-box-item .event-content .event-list li i {
+    position: relative;
+  }
+  .event-box-item .event-date {
+    margin-top: 10px;
+  }
+  .event-box-item .event-date h4 {
+    font-size: 45px;
+  }
+  .single-blog-item .blog-content {
+    padding: 20px;
+  }
+  .single-blog-item .blog-content .post-meta li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .single-footer-widget .logo h2 {
+    font-size: 40px;
+  }
+  .single-footer-widget p {
+    font-size: 15px;
+  }
+  .single-footer-widget.pl-5,
+  .single-footer-widget .px-5 {
+    padding-left: 0 !important;
+  }
+  .main-banner-image-wrap {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .main-banner-shape .shape-5 {
+    display: none;
+  }
+  .main-banner-shape .shape-6 {
+    display: none;
+  }
+  .who-we-are-image-wrap {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .single-activities .activities-content h3 {
+    font-size: 20px;
+  }
+  .single-facilities .facilities-content h3 {
+    font-size: 20px;
+  }
+  .facilities-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .feedback-slides .feedback-item .feedback-image {
+    margin-bottom: 30px;
+  }
+  .feedback-slides .feedback-item .feedback-content p {
+    font-size: 15px;
+  }
+  .main-banner-shape .banner-bg-shape-2 {
+    display: none;
+  }
+  .banner-child .child-1 {
+    max-width: 130px;
+  }
+  .banner-child .child-2 {
+    max-width: 130px;
+  }
+  .choose-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .choose-image .choose-image-shape .shape-1 {
+    display: none;
+  }
+  .choose-image .choose-image-shape .shape-2 {
+    display: none;
+  }
+  .choose-image .choose-image-shape .shape-3 {
+    display: none;
+  }
+  .single-choose .content h3 {
+    font-size: 22px;
+  }
+  .quote-image {
+    height: 450px;
+  }
+  .quote-item {
+    padding: 30px;
+  }
+  .newsletter-shape .shape-1 {
+    display: none;
+  }
+  .newsletter-shape .shape-2 {
+    display: none;
+  }
+  .single-choose-item {
+    margin-bottom: 30px;
+  }
+  .overview-content {
+    padding: 30px;
+  }
+  .enrollment-image {
+    height: 450px;
+  }
+  .faq-image {
+    height: 450px;
+  }
+  .coming-soon-content {
+    padding: 30px 25px;
+  }
+  .coming-soon-content #timer {
+    margin-top: 30px;
+  }
+  .coming-soon-content #timer div {
+    width: 100px;
+    height: 105px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .coming-soon-content h2 {
+    font-size: 25px;
+  }
+  .teacher-details-desc .teacher-desc-content h3 {
+    font-size: 25px;
+  }
+  .teacher-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .event-details-desc .event-desc-content h3 {
+    font-size: 25px;
+  }
+  .event-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .class-details-desc .class-desc-content h3 {
+    font-size: 25px;
+  }
+  .class-details-information {
+    padding: 25px 20px;
+    margin-top: 30px;
+  }
+  .widget-area {
+    margin-top: 30px;
+  }
+  .contact-information {
+    margin-top: 30px;
+  }
+  .newsletter-content {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mean-container a.meanmenu-reveal {
+    padding: 5px 0 0;
+  }
+  .mean-container a.meanmenu-reveal span {
+    display: block;
+    background: #000;
+    height: 4px;
+    margin-top: -5px;
+    border-radius: 3px;
+    position: relative;
+    top: 8px;
+  }
+  .mean-container .mean-bar {
+    background-color: unset;
+    border-bottom: none;
+    padding-top: 0;
+  }
+  .mean-container .mean-nav {
+    margin-top: 40px;
+  }
+  .main-responsive-nav .logo img {
+    position: relative;
+    z-index: 99999;
+  }
+  .others-option-for-responsive .dot-menu {
+    top: -30px;
+  }
+  .others-option-for-responsive .container .container {
+    right: 20px;
+    max-width: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .others-option-for-responsive .option-inner .others-options {
+    margin-left: 0;
+  }
+  .others-option-for-responsive .option-inner .others-options .option-item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item:last-child {
+    margin-bottom: 0;
+  }
+  .others-option-for-responsive
+    .option-inner
+    .others-options
+    .option-item
+    .language-switcher
+    .dropdown-menu {
+    margin-top: 10px;
+  }
+  .others-option-for-responsive .option-inner .others-options.d-flex {
+    display: block !important;
+  }
+  .main-banner-item {
+    border-bottom: 1px solid #eee;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+  .main-banner-item .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-banner-content {
+    max-width: 450px;
+  }
+  .main-banner-shape .banner-bg-shape {
+    bottom: -35px;
+  }
+  .main-banner-shape .shape-1 {
+    max-width: 60px;
+  }
+  .main-banner-shape .shape-3 {
+    bottom: 0;
+    max-width: 70px;
+  }
+  .single-class .class-content {
+    padding: 45px 20px 30px;
+  }
+  .single-class .class-content h3 {
+    font-size: 20px;
+  }
+  .single-class .class-content .class-list li {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  .single-class .class-content .class-list li span {
+    font-size: 14px;
+  }
+  .value-shape .shape-3 {
+    display: none;
+  }
+  .testimonials-slides.owl-theme .owl-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  .testimonials-slides.owl-theme .owl-nav [class*="owl-"] {
+    position: relative;
+    left: 0;
+    top: unset;
+    -webkit-transform: unset;
+    transform: unset;
+  }
+  .testimonials-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
+    right: -10px;
+  }
+  .main-banner-shape .shape-5 {
+    max-width: 100px;
+  }
+  .main-banner-shape .shape-6 {
+    max-width: 150px;
+  }
+  .event-box-item .event-content h3 {
+    font-size: 22px;
+  }
+  .value-shape .shape-2 {
+    bottom: 0;
+  }
+  .choose-area {
+    overflow: hidden;
+  }
+  .main-banner-shape .banner-bg-shape-2 {
+    top: -40px;
+    left: -5px;
+  }
+  .single-fun-fact h3 {
+    font-size: 40px;
+  }
+  .single-choose .content h3 {
+    font-size: 20px;
+  }
+  .quote-item {
+    padding: 25px;
+  }
+  .support-list-item li {
+    margin-right: 70px;
+  }
+  .support-list-item li img {
+    margin-bottom: 20px;
+    max-width: 50px;
+  }
+  .support-list-item li span {
+    font-size: 16px;
+  }
+  .single-teacher-content h3 {
+    font-size: 25px;
+  }
+  .single-teacher-content p {
+    font-size: 15px;
+  }
+  .event-area.event-item-two .event-box-item .event-content h3 a {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .main-banner-content {
+    max-width: 550px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .main-banner-item {
+    height: 865px;
+  }
+}
