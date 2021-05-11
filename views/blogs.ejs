@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+
+    <link rel="stylesheet" href="/assets/css/boxicons.min.css">
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="./assets/css/footer.css" rel="stylesheet" />
+  <link href="./assets/css/navbar.css" rel="stylesheet" />
+  <link href="./assets/css/team.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="/assets/css/odometer.min.css">
+
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+
+    <link rel="stylesheet" href="/assets/css/imagelightbox.min.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/work.css">
+
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <title>SattavaLabs</title>
+        <!-- Global site tag (gtag.js) - Google Ads: 732857665 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-732857665"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'AW-732857665');
+        </script>
+  
+</head>
+
+<body>
+<section class="main-section team-section-header services-section ">
+      <div class="home-section-overlay">
+    
+        <nav class="navbar-container">
+          <div class="logo-container">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/images/mainlogo.png"/></a>
+          </div>
+        
+          <ul class="navbar-ul desktop-nav">
+            <li class="navbar-item ">
+              <a href="/" class="navbar-link " > Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/about" class="navbar-link" > About</a>
+            </li>
+           
+            <li class="navbar-item">
+              <a href="/services" class="navbar-link" > Services</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/work" class="navbar-link" > Work</a>
+            </li>
+          
+            
+            <li class="navbar-item">
+              <a href="/contact" class="navbar-link" >Contact</a>
+            </li>
+            <li class="navbar-item active">
+            <a href="/blog" class="navbar-link" >Blogs</a>
+          </li>
+          </ul>
+        
+        
+        <div class="toggler inactive" id="toggler" onclick="menuClicked()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        
+          <ul class="navbar-ul mobile-nav hidemobilenav" id="mobileNav">
+            <li class="navbar-item ">
+              <a href="/" class="navbar-link " > Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/about" class="navbar-link" > About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/team" class="navbar-link" > Team</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/services" class="navbar-link" > Services</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/work" class="navbar-link" > Work</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/lab" class="navbar-link" >Lab</a>
+            </li><li class="navbar-item">
+            <li class="navbar-item">
+              <a href="/careers" class="navbar-link" > Careers</a>
+            </li>
+              <a href="/contact" class="navbar-link" >Contact</a>
+            </li>
+          </ul>
+        
+        
+        
+        </nav>
+
+        <div class="homepage-container">
+          <div class="container">
+            <div class="row align-item-center">
+              <div class="col-lg-8">
+              
+                <h2 class="cta-heading">Need heading for blogs this is dummy
+                  <br />
+                  <span class="main-heading">Our Blogs.</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- End Nav
+================================================== -->
+
+<!-- Begin Site Title
+================================================== -->
+
+<!-- End Site Title
+================================================== -->
+
+	<!-- Begin Featured
+	================================================== -->
+	<section class="featured-posts" style="min-height: 100vh;">
+	<div class="section-title text-center">
+		<h2 class='work-card-heading f-60 p-6 '>Blogs</h2>
+	</div>
+    <div class="container">
+        <div class="card-columns listfeaturedtag" >
+            <div class="row">
+            <!-- begin post -->
+                <% blogs.map(element=>{ %>
+                    <div class="col-lg-6 col-md-6 col-12" style="margin-bottom: 20px;">
+                        <a href="blog/<%= element.blogId%>">
+                            <div class="card">
+                            <div class="row">
+                                <div class="col-md-5 wrapthumbnail">
+                                    <a href="blog/<%= element.blogId%>">
+                                    <%console.log(element)%>
+                                        <div class="thumbnail" 
+                                        style="background-image:url(<%=element.thumbImage%>); background-size: cover;width: 100%;height: 100%;background-repeat: no-repeat;background-position: center;min-height: 28vh;"></div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-block" style="padding: 15px 10px; height:100%;display: flex;flex-direction:column;justify-content: space-between;">
+                                        <h2 class="card-title"><a href="blog/<%= element.blogId%>"  style="font-size: 26px;"><%= element.heading%></a></h2>
+                                         <h4 class="card-text">
+                                        <%=element.shortContent%>
+                                        </h4> 
+                                        <div class="metafooter">
+                                            <div class="wrapfooter">
+                                                
+                                                <span class="author-meta">
+                                                <span class="post-name"><a href="author.html">
+                                                sattvalabs</a></span><br/>
+                                                <span class="post-date"><%=element.date%></span>
+                                                <!-- <span class="dot"></span><span class="post-read"> 
+                        
+                                                <%=element.time%>
+                                                </span> -->
+                                                </span>
+                                                <span class="post-read-more">
+                                                <a href="blog/<%= element.blogId%>" title="Read Story"></a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                <%	})%>
+            </div>
+        </div>
+    </div>
+	</section>
+
+</div>
+
+ <footer class="footer">
+    <div class="container-fluid">
+      <div class="row info-box">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter-box">
+            <span>20+</span>
+            <p>Customers Served</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter-box">
+            <span>20+</span>
+            <p>UX Researches</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter-box">
+            <span>20+</span>
+            <p>Design Sprints</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="counter-box">
+            <span>20+</span>
+            <p>User Studies</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 col-md-9 col-12 connect">
+          <span>We’d love to connect with you!</span><br/>
+         
+        </div>
+        <div class="col-lg-5 col-md-9 col-12 connect">
+          <a class="no-deco" href="./contact"><button class="custom-btn abouttextcard-button connect-cta">
+            VIEW IN DETAIL
+          </button></a>
+        </div>
+      </div>
+
+      <div class="row myfooter">
+        <div class="col-lg-3 col-md-4 col-12">
+          <div style="display: flex; flex-direction: column;justify-content: center; height: 100%;">
+            <span>We are always looking out for talent!</span>
+            <a href="mailto:info@sattva-labs.com">info@sattva-labs.com</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-12">
+          <h6 class="footer-heading" style="margin-bottom: 15px">Quick Links</h6>
+
+          <p>
+            <a href="./team">Team</a><br /><br />
+            <a href="./Lab">Lab</a><br /><br />
+            <a href="./careers">Careers</a><br /><br />
+            <a href="./contact">Contact</a><br /><br />
+
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-12">
+          <h6 class="footer-heading" style="margin-bottom: 15px">SAY HELLO @MUMBAI</h6>
+
+          <p>
+            Worksquare, Saki Naka<br /><br />
+            Powai, Mumbai<br /><br />
+            Maharashtra<br /><br />
+
+            +91 98507 60989
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-12">
+          <h6 class="footer-heading" style="margin-bottom: 15px">SAY HELLO @NASIK</h6>
+
+          <p>
+            1 Unique Heights<br /><br />
+            Near Ambad Police Station,<br /><br />
+            Ashwin Nagar CIDCO Nashik<br /><br />
+
+            +91 98507 60989
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12">
+
+          <div id="lab_social_icon_footer">
+            <div class="container">
+              <div class="text-center center-block">
+                <a href="https://www.facebook.com/sattvalabs/"><i style="color:#fff"
+                    class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://instagram.com/sattvalabs?igshid=oxt4le9x53vc"><i style="color:#fff" id="social-tw"
+                    class="fa fa-instagram fa-3x social"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/sattvalabs"> <i style="color:#fff"
+                    id="social-gp" class="fa fa-linkedin-square fa-3x social"></i></a>
+                <a target="_blank" href="https://twitter.com/sattvalabs?s=11"><i style="color:#fff" id="social-em"
+                    class="fa fa-twitter-square fa-3x social"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div style="background-color: #edf9fc;">
+        <p style="text-align: center; margin:0;"><span style="color: #0798cd;"><strong>2021 Sattva-labs Innovation Pvt. Ltd</strong></span></p>
+      </div>
+    </div>
+  </footer>
+    <div class="go-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+
+
+
+
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script.js"></script>
+    <script src="/assets/js/main.js"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script>
+  const currentLocation = location.href;
+  console.log("Current location", location.href);
+
+  const navbarLinks = document.querySelectorAll(".navbar-link");
+
+  console.log(navbarLinks);
+
+  for (let i = 0; i < navbarLinks.length; i++) {
+    if (navbarLinks[i].href == currentLocation) {
+      console.log(navbarLinks[i]);
+      navbarLinks[i].className = "navbar-link  active";
+    }
+  }
+
+  function menuClicked(){
+
+
+let toggler = document.getElementById('toggler')
+let navMenu = document.getElementById('mobileNav')
+
+navMenu.classList.toggle('showmobilenav')
+navMenu.classList.toggle('hidemobilenav')
+toggler.classList.toggle('active')
+toggler.classList.toggle('inactive')
+
+
+}
+
+window.addEventListener('scroll', function() { 
+  let navbar = document.querySelector('.navbar-container') ;
+
+  let currentPosition = window.scrollY ;
+
+  if(currentPosition>100){
+    navbar.classList.add('navbar-white')}
+    else{
+      navbar.classList.remove('navbar-white')
+    }
+
+})
+
+
+
+</script>
+</body>
+</html>
