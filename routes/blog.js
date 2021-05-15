@@ -25,9 +25,25 @@ var Storage = mutter.diskStorage({
 var upload = mutter({
   storage: Storage
 })
-
-router.post('/uploadImage',upload.single('avatar'),async (req,res)=>{
+router.post('/upload',async(req,res)=>{
+  console.log(req.body)
+//   const formData = new FormData();
+//   formData.append("file", Docs);
+//   formData.append("tags", `codeinfuse, medium, gist`);
+//   formData.append('upload_preset', PRESET);
+//   formData.append("api_key", KEY); // Replace API key with your own Cloudinary key
+//   formData.append("timestamp", (Date.now() / 1000) | 0);
+//  return Axios.post(CLOUDINARY_URL, formData, {
+//   headers: { "X-Requested-With": "XMLHttpRequest" },
+// }).then(response => {
+//   const data = response.data;
+//   const fileURL = data.secure_url // You should store this URL for future references in your app
   
+//   return fileURL
+// })
+})
+router.post('/uploadImage',upload.single('avatar'),async (req,res)=>{
+ // console.log('hello')
   await cloudinary.uploader.upload(req.file.path, function(error, result) {
     console.log(result)
 blog.findById(req.body.id).then(found=>{
@@ -38,7 +54,8 @@ blog.findById(req.body.id).then(found=>{
     blog.find({}).then(blogs=>{
       admin.find().then(userDetails=>{
          // console.log(userDetails)
-          res.render('blogPanel',{blogs:blogs,userDetails:userDetails[0]})
+         res.json('hello')
+         // res.render('blogPanel',{blogs:blogs,userDetails:userDetails[0]})
       })
   });
 }).catch(err=>{
@@ -62,6 +79,7 @@ router.post('/postBlog',blogController.postBlog,err=>{
   console.log('error while signup user')
 })
 router.get('/EditBlogById/:id/:token',verifyAdmin,blogController.editBlogPage)
+router.get('/AddBlog/:token',verifyAdmin,blogController.addBlog)
 router.put('/editBlog/:id/:token',verifyAdmin,blogController.editBlog,err=>{
   console.log('error while signup user')
 })

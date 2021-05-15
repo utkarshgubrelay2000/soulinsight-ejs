@@ -7,6 +7,16 @@ var Schema=new mongoose.Schema({
     thumbImage:{
         type:String
     },
+    mainHeaderImage:{
+        type:String
+        
+    },
+    authorImage:{
+        type:String 
+    },
+    authorName:{
+        type:String
+    },
     content:{
         type:String,
         required:true

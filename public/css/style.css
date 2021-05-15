@@ -3415,6 +3415,8 @@ body.dark {
 
 
 
-.flex-wrap-reverse{
-  /* flex-wrap: wrap-reverse; */
+
+.label-blog{
+  font-size: 20px;
+  font-weight: 600;
 }
