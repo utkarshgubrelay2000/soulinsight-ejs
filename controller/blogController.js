@@ -55,13 +55,29 @@ exports.adminpanel = (req, res) => {
     });
 };
 exports.editBlog = (req, res) => {
-  const { content, heading } = req.body;
+  const { content,
+    heading,
+    shortContent,
+    userId,
+    authorName,
+    thumbImage,
+    authorImage,
+    mainHeaderImage, } = req.body;
   let blogId = heading.replace(/\s/g, "-");
+  let newdate=new Date()
   blog
     .findByIdAndUpdate(req.params.id, {
       heading: heading,
-      content: content,
-      blogId: blogId,
+    content: content,
+    blogId: blogId,
+    day: newdate.getDay(),
+    month: newdate.toLocaleString("default", { month: "long" }),
+    shortContent: shortContent,
+    userId: userId,
+    thumbImage: thumbImage,
+    mainHeaderImage: mainHeaderImage,
+    authorImage: authorImage,
+    authorName: authorName,
     })
     .then((saved) => {
       blog
@@ -69,7 +85,7 @@ exports.editBlog = (req, res) => {
         .then((blogs) => {
           admin.find({}).then((userDetails) => {
             console.log(userDetails);
-            res.render("adminPanel", {
+            res.render("blogPanel", {
               blogs: blogs,
               userDetails: userDetails[0],
             });
