@@ -35,39 +35,13 @@
     
 </head>
 
-<style>
-.left{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: rgb(85, 83, 83);
-    border-width: 1px/2;
-    border-style: solid;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    /* background-image: url(https://images.pexels.com/photos/7075/people-office-group-team.jpg?cs=srgb&dl=pexels-startup-stock-photos-7075.jpg&fm=jpg); */
-}
 
-.right{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: rgb(85, 83, 83);
-    border-width: 1px/2;
-    border-style: solid;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-    
-</style>
 
 <body class="light" >
 
 <!-- Modal -->
 <!-- Modal -->
-<div class="modal fade" onclick="videoPause()" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" onclick="videoPause()" id="videomodal" tab="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content" >
         <div class="modal-header">
@@ -78,10 +52,15 @@
         </div>
         <div class="modal-body" >
           
-            <video id="brandVideo"  controls preload="none" poster="https://img.freepik.com/free-vector/digital-marketing-landing-page_33099-1726.jpg?size=626&ext=jpg">
-                <source src="./img/brand.webm" type="video/webm">
-                <source src="./img/brand.mp4" type="video/mp4">
-              </video>
+
+            <iframe id="brandVideo" width="560" 
+            height="315" src="https://www.youtube.com/embed/Px1LyqBfmIw"
+             title="YouTube video player" frameborder="0" 
+             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen></iframe>
+
+
+   
         
         </div>
        
@@ -90,28 +69,26 @@
   </div>
   <!-- Modal -->
 
-    <!-- ==================== Start Loading ==================== -->
 
+
+  
+    <!-- ==================== Start Loading ==================== -->
     <div id="preloader">
         <div class="loading-text">Loading</div>
     </div>
-
     <!-- ==================== End Loading ==================== -->
 
 
     <!-- ==================== Start progress-scroll-button ==================== -->
-
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
     </div>
-
     <!-- ==================== End progress-scroll-button ==================== -->
 
 
     <!-- ==================== Start Navgition ==================== -->
-
     <div id="navi" class="topnav">
         <div class="container-fluid">
             <div class="logo">
@@ -147,17 +124,13 @@
                                 </div>
                             </li>
                         
+                         
+
+
                             <li>
                                 <div class="o-hidden">
-                                   <a href="./genises"> <span class="link dmenu"><span class="nm">03.</span>Genesis of B(E)ING</a>
-                                          
-                                </div>
-                            
-                            </li>
-                            <li>
-                                <div class="o-hidden">
-                                   <a href="/blog"><span class="link dmenu">
-                                        <span class="nm">04.</span>Blogs </span>
+                                   <a href="./blog"><span class="link dmenu">
+                                        <span class="nm">03.</span>Blogs </span>
                                         </a>  
                                           
                                 </div>
@@ -165,8 +138,14 @@
                              <li>
                                 <div class="o-hidden">
                                     <a href="./contact"><span class="link dmenu">
-                                        <span class="nm">05.</span>Contact </span>
+                                        <span class="nm">04.</span>Contact </span>
                                         </a>        
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="o-hidden">
+                                   <a href="./genises"> <span class="link dmenu"><span class="nm">05.</span>Be (-ing)</a>       
                                 </div>
                             </li>
 
@@ -200,12 +179,10 @@
             </div>
         </div>
     </div>
-
     <!-- ==================== End Navgition ==================== -->
 
 
     <!-- ==================== Start wrapper ==================== -->
-
     <div class="wrapper">
 
 
@@ -266,14 +243,14 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="bg-img valign" data-background="./img/homebanners/culture.jpeg" data-overlay-dark="3">
+                        <div class="bg-img valign namaste-image" data-background="./img/homebanners/culture.jpeg" data-overlay-dark="3">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-10 offset-lg-1">
                                         <div class="caption">
-                                            <h1 data-splitting><a href="culture">MEANING in the 
-                                                <br> <span class="stroke">BACKDROP </span>
-                                                OF CULTURE</a></h1>
+                                            <h1 data-splitting><a href="culture">MEANING IN THE 
+                                                <br> <span class="stroke backdrop-manage" >BACKDROP </span>
+                                                  OF CULTURE</a></h1>
                                             <a href="./culture" class="dis" data-splitting>Explore More</a>
                                         </div>
                                     </div>
@@ -288,7 +265,7 @@
                                     <div class="col-lg-10 offset-lg-1">
                                         <div class="caption">
                                             <h1 data-splitting><a href="actions">OUTCOMEs
-                                                <br> <span class="stroke">DETERMINE</span>
+                                                <br> <span class="stroke">DETERMINE </span> &nbsp;
                                                     ACTIONS</a></h1>
                                             <a href="./actions" class="dis" data-splitting>Explore More</a>
                                         </div>
@@ -301,8 +278,8 @@
                 
                 </div>
 
-                <div class="social">
-                    <span class="icon"><i class="fas fa-share-alt"></i></span>
+                <div class="social active">
+                    <!-- <span class="icon"><i class="fas fa-share-alt"></i></span> -->
                     
                     <a target="_blank" href="https://www.linkedin.com/in/soul-insights-57b284211/">Linkedin</a>
                     <a target="_blank" href="https://twitter.com/soul_insights">Twitter</a>
@@ -385,19 +362,22 @@
 
         <section class="team-section section-padding">
             <div class="container">
+                <h2 class="wow" data-splitting>Meet Our Creative Minds</h2>
+                <br>
                 <div class="row justify-space-around">
-                    <div class="col-lg-4 col-md-6 valign ">
-                        <div class="intro mb-80">
-                            <h2 class="extra-title wow" data-splitting>Meet Our <br> Creative Minds.
-                            </h2>
-                        </div>
-                    </div>
+
+
+               
+
+           
+
+
                     <div class="col-lg-3 col-md-6">
                         <div class="item mb-30">
                             <div class="img">
                                 <img class="thumparallax" src="img/team/1.png" alt="">
                                 <div class="info">
-                                    <h6>Aakansha</h6>
+                                    <h6>Akansha</h6>
                                     <p>Founding Partner</p>
                               
                                        <p style="line-height: 1.2;">Born empath, Accidental Quallie.
@@ -453,10 +433,10 @@
                                                     <div class="col-lg-6">
                                                         <h6><span>1</span> HUMAN CENTRICITY:</h6>
                                                         <ul><li style="margin: 5px;"><p>
-                                                            1) Live labs – Research integration with live marketing activities for real-time feedback
+                                                            1) Live labs – Research integration with live marketing activities for real-time feedback.
                                                         </p></li>
-                                                        <li style="margin: 5px;"><p>2) SOULd out Communities - Recruitment through online communities, referential recruitment, etc</p></li>
-                                                        <li style="margin: 5px;"><p>3) Video movies – Videos as a window into the life of a HUMAN</p></li>
+                                                        <li style="margin: 5px;"><p>2) SOULd  Communities - Recruitment through online communities, referential recruitment, etc.</p></li>
+                                                        <li style="margin: 5px;"><p>3) Visual Snippets – Videos as a window into the life of a HUMAN.</p></li>
                                                         
                                                         </ul>
                                                         
@@ -482,13 +462,15 @@
                                                         <h6><span>2</span> EMOTIONAL DATA:</h6>
                                                         <ul>
                                                             <li style="margin: 5px;"><p>
-                                                            1) Research over social media – Decoding consumer conversations on the internet 
+                                                            1) Research over social media – Decoding consumer conversations on the internet.
                                                         </p></li>
                                                         <li style="margin: 5px;"><p>
-                                                            2) Creative therapy interactions – Context understanding through social media and other sources 
+                                                            2) Creative therapy interactions – Context understanding through social 
+                                                            media and other sources.
                                                         </p></li>
                                                         <li style="margin: 5px;"><p>
-                                                            3) Influencer Run Research – Online influencer engagement for research with consumers
+                                                            3) Influencer Run Research – Online influencer engagement for research
+                                                             with consumers.
                                                         </p></li>
                                                         </ul>
                                                         
@@ -505,12 +487,19 @@
                                                 <div class="row flex-wrap-reverse">
                                                   
                                                     <div class="col-lg-6">
-                                                        <h6><span>3</span> Fusion</h6>
+                                                        <h6><span>3</span>FUSION</h6>
                                                         <ul><li style="margin: 5px;"><p>
-                                                            1) Fuse ball – Multiple data sources integration as deemed necessary (Social media analytics (SMA), Quantitative research, Establishment data – Euromonitor, Mckinsey, RMS, HH panel et al)
+                                                            1) Fuse ball – Multiple data sources integration as deemed necessary 
+                                                            (Social media analytics (SMA), Quantitative research, Establishment
+                                                             data – Euromonitor, Mckinsey, RMS, HH panel et al).
                                                         </p></li>
-                                                        <li style="margin: 5px;"><p>2) Dashboard reportage – Dashboard creation for warehousing and integrating research and analytics findings for a comprehensive and clear view</p></li>
-                                                     
+                                                        <li style="margin: 5px;">
+                                                            <p>2) Dashboard reportage – Dashboard creation for warehousing 
+                                                                and integrating research and analytics findings for a 
+                                                                comprehensive and clear view.</p></li>
+                                                        <li style="margin: 5px;"><p>3) Know Your Channel Partner – Journey
+                                                            understanding and measurement of channel partner of the 
+                                                            ecommerce ecosystem. </p></li>
                                                         
                                                         </ul>
                                                         
@@ -534,10 +523,24 @@
                                                     </div>
                                                     <div class="col-lg-6 ">
                                                         <h6><span>4</span> MEANING in the BACKDROP OF CULTURE:</h6>
-                                                        <ul><li style="margin: 5px;"><p>
-                                                            1) Culture trails – Walk through consumer life for an up close and personal look at the HUMAN
+                                                        <ul>
+                                                            <li style="margin: 5px;"><p>
+                                                            1) Culture trails – Immersing into the natural habitat of the HUMAN through
+                                                             observation to gain the most authentic information.
                                                         </p></li>
-                                                     
+                                                        <li style="margin: 5px;"><p>
+                                                            2) HUMAN playbook – An up close and personal hands-on and on-the-scene
+                                                             observational learning of the HUMAN.
+                                                        </p></li>
+
+                                                        <li style="margin: 5px;"><p>
+                                                            3)  Passive Observation – Understanding of evolving trends by 
+                                                            leaning backward and etic perspective.
+
+                                                        </p></li>
+
+
+
                                                         </ul>
                                                         
                                                     </div>
@@ -555,14 +558,18 @@
                                                         <h6><span>5</span> OUTCOMEs DETERMINE ACTIONS</h6>
                                                         <ul>
                                                             <li style="margin: 5px;"><p>
-                                                            1) Sprints/Sprint workshops – Quick and pointed research undertakings with request to end delivery time-line of 3 days
+                                                            1) Sprints/Sprint workshops – Quick and pointed research
+                                                             undertakings with request to end delivery time-line of 3 days.
                                                         </p></li>
-                                                        <li style="margin: 5px;"><p>2) Know Your Channel Partner – Journey understanding and measurement of channel partner of the ecommerce ecosystem </p></li>
+                                                       
                                                      
                                                         <li style="margin: 5px;"><p>
-                                                            3) Shopper Journey – Uncover evolving shopping journey across categoriesShopper Journey – Uncover evolving shopping journey across categories
+                                                            2) Shopper Journey – Uncover evolving shopping journey across categories.
+                                                         
                                                         </p></li>
-                                                        <li style="margin: 5px;"><p>4) UI/UX research integration - Inclusion of realistic context and insights into design processes (ideal user personas, user journeys, etc with the help of qualitative research)</p></li>
+                                                        <li style="margin: 5px;"><p>3) UI/UX research integration - Inclusion of realistic
+                                                             context and insights into design processes (ideal user personas, user 
+                                                             journeys, etc with the help of qualitative research).</p></li>
                                                         </ul>
                                                         
                                                     </div>
@@ -585,7 +592,8 @@
 
          <!-- ==================== Start Process ==================== -->
         <section class="process section-padding pb-0 bg-pattern bg-img no-cover" data-background="img/pattern.svg">
-            <div class="container">
+        
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-head">
@@ -594,7 +602,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -611,38 +619,32 @@
                     </a>
 
                 </div>
+                
                 <div class="container-fluid on-top">
                     <div class="row">
                         <div class="col-lg-5 offset-lg-7 content">
-                            <h4 class="wow" data-splitting>We believe that our works can contribute to a better
-                                world.
+                            <h4 class="wow" data-splitting>We believe our offer can contribute to change and create impact.
                             </h4>
                             <ul>
                                 <li class="wow fadeInUp" data-wow-delay=".3s">
                                     <span class="numb nmb-font">01</span>
                                     <div class="cont">
-                                        <h5>Create An Ideas</h5>
-                                        <p>Implementation and rollout of new network
-                                            infrastructure, including
-                                            consolidation.</p>
+                                        <h5>AUTHENTIC IDEAS</h5>
+                                        <p>Get authentic through fresh thinking and ideas.</p>
                                     </div>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay=".3s">
                                     <span class="numb nmb-font">02</span>
                                     <div class="cont">
-                                        <h5>Complete The Project</h5>
-                                        <p>Implementation and rollout of new network
-                                            infrastructure, including
-                                            consolidation.</p>
+                                        <h5>HUMAN in RESEARCH</h5>
+                                        <p>Bring the HUMAN closer to you.</p>
                                     </div>
                                 </li>
                                 <li class="wow fadeInUp" data-wow-delay=".3s">
                                     <span class="numb nmb-font">03</span>
                                     <div class="cont">
-                                        <h5>Execution</h5>
-                                        <p>Implementation and rollout of new network
-                                            infrastructure, including
-                                            consolidation.</p>
+                                        <h5>BEYOND the conspicuous</h5>
+                                        <p>Look for most affective actionability.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -663,7 +665,7 @@
 
             <!-- ==================== Start Testimonials ==================== -->
 
-            <section class="testimonials section-padding">
+            <!-- <section class="testimonials section-padding">
                 <div class="container">
 
                     <div class="title">
@@ -737,7 +739,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- ==================== End Testimonials ==================== -->
 
@@ -974,161 +976,7 @@
 
       
         
-            <!-- ==================== Start Blog ==================== -->
-
-            <section class="blog">
-                <div class="stories bg-img no-cover bg-pattern" data-background="img/pattern.svg">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-6 no-padding blog-image-container">
-                                <div class="swiper-container swiper-img">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".3s">
-                                                <div class="img">
-                                                    <img class="thumparallax" style="width:100%" loading="lazy" src="img/blog/1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".3s">
-                                                <div class="img">
-                                                    <img class="thumparallax" style="width:100%" loading="lazy" src="img/blog/4.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".3s">
-                                                <div class="img">
-                                                    <img class="thumparallax" 
-                                                    style="width:100%" loading="lazy"
-                                                     src="img/blog/2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 no-padding valign">
-                                <div class="swiper-container swiper-content">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".6s">
-                                                <div class="content">
-                                                    <div class="tags">
-                                                        <!-- <a href="#0">Trending</a> -->
-                                                    </div>
-                                                    <div class="info">
-                                                        <a href="#0">
-                                                            <i class="far fa-clock"></i>
-                                                            06 Aug 2019
-                                                        </a>
-                                                        <a href="#0">
-                                                            by Alex Morgan
-                                                        </a>
-                                                    </div>
-                                                    <div class="title">
-                                                        <h4><a href="#0">Create The Lifestyle You
-                                                                Really Desire This World</a>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Success is no accident. It is hard work, perseverance,
-                                                            learning,
-                                                            studying, sacrifice and most of all, love of what you
-                                                            are doing.
-                                                        </p>
-                                                    </div>
-                                                    <div class="more">
-                                                        <a href="blog-details">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".6s">
-                                                <div class="content">
-                                                    <div class="tags">
-                                                        <!-- <a href="#0">Trending</a> -->
-                                                    </div>
-                                                    <div class="info">
-                                                        <a href="#0">
-                                                            <i class="far fa-clock"></i>
-                                                            06 Aug 2019
-                                                        </a>
-                                                        <a href="#0">
-                                                            by Alex Morgan
-                                                        </a>
-                                                    </div>
-                                                    <div class="title">
-                                                        <h4><a href="#0">List of The Best Investment
-                                                                Projects</a></h4>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Success is no accident. It is hard work, perseverance,
-                                                            learning,
-                                                            studying, sacrifice and most of all, love of what you
-                                                            are doing.
-                                                        </p>
-                                                    </div>
-                                                    <div class="more">
-                                                        <a href="blog-details">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="item wow fadeIn" data-wow-delay=".6s">
-                                                <div class="content">
-                                                    <div class="tags">
-                                                        <!-- <a href="#0">Trending</a> -->
-                                                    </div>
-                                                    <div class="info">
-                                                        <a href="#0">
-                                                            <i class="far fa-clock"></i>
-                                                            06 Aug 2019
-                                                        </a>
-                                                        <a href="#0">
-                                                            by Alex Morgan
-                                                        </a>
-                                                    </div>
-                                                    <div class="title">
-                                                        <h4><a href="#0">World Best Business Website
-                                                                Company</a></h4>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Success is no accident. It is hard work, perseverance,
-                                                            learning,
-                                                            studying, sacrifice and most of all, love of what you
-                                                            are doing.
-                                                        </p>
-                                                    </div>
-                                                    <div class="more">
-                                                        <a href="blog-details">Read More</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider setting -->
-                        <div class="controls">
-                            <div class="swiper-button-next swiper-nav-ctrl next-ctrl">
-                                <i class="fas fa-caret-up"></i>
-                            </div>
-                            <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl">
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==================== End Blog ==================== -->
+         
 
             <!-- ==================== Start call-to-action ==================== -->
 
@@ -1137,7 +985,7 @@
                     <div class="row">
                         <div class="col-md-8 col-lg-9">
                             <div class="content sm-mb30">
-                                <h6 class="wow" data-splitting>Let’s Talk</h6>
+                                <h6 class="wow" data-splitting><strong><strong></strong>Let’s Talk</strong></strong> </h6>
                                 <h2 class="wow" data-splitting>about your <b>next project</b>.</h2>
                                 <p class="wow txt" data-splitting>Get research solutions. Everyone is a potential
                                     creator.
@@ -1159,7 +1007,7 @@
 
             <!-- ==================== Start footer-sm ==================== -->
 
-           <footer class="footer-sm">
+            <footer class="footer-sm">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-4">
@@ -1169,12 +1017,12 @@
                         </div>
                         <div class="col-lg-6 col-md-8">
                             <div class="right">
-                                <p>© 2021, Soulinsights. Made with passion by The Brandwick </p>
+                                <p>SOUL - A HUMAN Insights Studio. Made with passion by The Brandwick.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer> 
+            </footer>
 
             <!-- ==================== End footer-sm ==================== -->
 

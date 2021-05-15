@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+<title>Admin Panel</title>
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;display=swap" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="/css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="/css/style.css" />
+<!-- Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/footer.css" rel="stylesheet" />
+  <link href="/assets/css/navbar.css" rel="stylesheet" />
+  <link href="/assets/css/team.css" rel="stylesheet" />
+  <link href="/assets/css/work.css" rel="stylesheet" />
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<br>
+<div class="container  ">
+	<div class="mainheading mt-4 ml-4">
+		<h1 class="sitetitle">Welcome Admin</h1>
+	</div>
+<!-- End Nav
+================================================== -->
+
+<!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-xs-12">
+		</div>
+
+		<!-- Begin Post -->
+		<div class="col-md-8 col-md-offset-2 col-xs-12 ">
+		 <div class="card card-body " style='border:none;' >
+		 <div class='m-2 p-3'>
+<label class='label-blog'>Title</label>
+		  <input required class='input-blog' name='heading' id='heading' placeholder='Title' >  <br>
+		 </div>
+		 <div class='m-2 p-3'>
+<label class='label-blog'>Description</label>
+		  <input class='input-blog' name='shortContent' id="shortContent" placeholder='Short Description of your blog' >  <br>
+		 </div>
+		 <div class='m-2 p-3'>
+			<h3> Thumbnail Image</h3><br>
+			<input type="file" required id='thumbImage' name="avatar" >
+		  </div>
+		  <div class='m-2 p-3'>
+			<h3> Main Header Image</h3><br>
+			<input type="file" id='mainHeaderImage' required name="avatar" >
+		  </div>
+		  	 <div class='m-2 p-3'>
+<label class='label-blog'>Author Name</label>
+		  <input class='input-blog' name='authorName'
+		   id="authorName" placeholder='Author Name' >  <br>
+		 </div>
+	  <div class='m-2 p-3'>
+		<h3> Author Image</h3><br>
+			<input type="file" required name="avatar" id='authorImage'  >
+		  </div>
+			  <div >
+        <br>  
+			  <div class='m-2 p-2 text-center'>
+			  <label class='label-blog'>Blog Post:</label>
+        <div style="height:30px;paddding:10px; margin:auto">
+			  <input  id="editor" name='content' value='<h1>Write Your Blog Content</h1>' > 
+			  <div class='m-2 p-2'>
+		<button id='submitToCloud' class="btn-curve mt-2 rounded-pill">Submit</button>
+        </div>
+        </div>
+			  </div>
+			</div> <br>
+		
+	</div>
+			
+     
+
+
+
+
+</div>
+<!-- End Article
+================================================== -->
+
+<div class="hideshare"></div>
+
+<</div>
+<script>
+async function changed(){
+	let a=document.getElementById('authorFile')
+///	let b=document.getElementById('thumbNailFile')
+console.log(a)
+	let form= await fetch('/blog/upload', {
+			headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "POST",
+    body: JSON.stringify({image1:a})
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+	console.log('done',data)
+	return data;
+  });
+}
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+   <script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+<script>
+
+	let editor,editor2;
+
+ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .then( newEditor => {
+        editor = newEditor;
+    } )
+    .catch( error => {
+        console.error( error );
+	} );
+async	function myfunction(){
+		let content = editor.getData()
+		let heading=document.getElementById('heading').value;
+		//console.log(heading,thumbnail)
+		let shortContent=document.getElementById('shortContent').value;
+let reponseFromBlogPosting=	await fetch('/blog/postBlog', {
+			headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "POST",
+    body: JSON.stringify({content: content, heading:heading,shortContent:shortContent})
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+	console.log('done',data)
+	return data;
+  });
+  document.getElementById('idField').value=reponseFromBlogPosting
+  console.log(reponseFromBlogPosting, document.getElementById('idField'))
+
+  await document.getElementById('submitButton').click()
+ // window.location.reload()
+	}
+
+if(!localStorage.getItem('token')){
+	window.location.href='/'
+//	console.log('hello')
+}
+function lendToUrl(url){
+	let a=document.createElement('a')
+	a.href='/blog/'+url
+	a.click()
+}
+function editBlog(element){
+	console.log('clicked')
+let a=document.createElement('a')
+a.href='/blog/EditBlogById/'+element+'/'+localStorage.getItem("token")
+a.click()
+
+}
+
+function deleteBlog(id){
+	console.log(id)
+	window.location.reload();
+	fetch('/blog/deleteBlog/'+id+"/" +localStorage.getItem('token'), {
+			headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "Delete",
+}).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log('done')
+  });
+}
+ function AddPanel(){
+  let token=localStorage.getItem('token')
+let a=document.createElement('a')
+
+a.href='/blog/AddBlog/'+token
+a.click()
+}
+    </script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
