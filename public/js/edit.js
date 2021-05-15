@@ -1,8 +1,11 @@
-
-let thumbnailImage=document.getElementById('thumbImageSrc').src;
-let mainHeaderImage=document.getElementById('mainHeaderImageSrc').src;
-let authorImage=document.getElementById('authorImageSrc').src;
-let token=localStorage.getItem('token')
+let thumbnailImage = document.getElementById("thumbImageSrc").src;
+let mainHeaderImage = document.getElementById("mainHeaderImageSrc").src;
+let authorImage = document.getElementById("authorImageSrc").src;
+let thumbnailImageForUploadCheck = document.getElementById("thumbImageSrc").src;
+let mainHeaderImageForUploadCheck =
+  document.getElementById("mainHeaderImageSrc").src;
+let authorImageForUploadCheck = document.getElementById("authorImageSrc").src;
+let token = localStorage.getItem("token");
 document.getElementById("thumbImage").addEventListener("change", (e) => {
   //  console.log(e.target.files[0])
   thumbnailImage = e.target.files[0];
@@ -10,64 +13,67 @@ document.getElementById("thumbImage").addEventListener("change", (e) => {
 document.getElementById("authorImage").addEventListener("change", (e) => {
   //console.log(e.target.files[0])
   authorImage = e.target.files[0];
-  console.log(mainHeaderImage, authorImage, thumbnailImage,editor.getData());
+  console.log(mainHeaderImage, authorImage, thumbnailImage, editor.getData());
 });
 document.getElementById("mainHeaderImage").addEventListener("change", (e) => {
   mainHeaderImage = e.target.files[0];
 });
-console.log(document.getElementById('mainHeaderImageSrc').src===mainHeaderImage  )
+//console.log(document.getElementById('mainHeaderImageSrc').src===mainHeaderImage  )
 document.getElementById("submitToCloud").addEventListener("click", async () => {
   console.log("hello");
-  if(thumbnailImage && mainHeaderImage && authorImage && heading && shortContent && authorName ){
-let thumbUrl=document.getElementById('thumbImageSrc').src
-    if(document.getElementById('thumbImageSrc').src!==thumbnailImage){
+  if (
+    thumbnailImage &&
+    mainHeaderImage &&
+    authorImage &&
+    heading &&
+    shortContent &&
+    authorName
+  ) {
+    let thumbUrl = thumbnailImageForUploadCheck;
+    if (thumbnailImageForUploadCheck !== thumbnailImage) {
       thumbUrl = await uploadThumbImage();
-   console.log('changed')
-
+      console.log("changed");
     }
-let headerImageUrl=document.getElementById('mainHeaderImageSrc').src
-if(document.getElementById('mainHeaderImageSrc').src!==mainHeaderImage){
-
-   headerImageUrl = await uploadMain();
-   console.log('changed')
-
-}
-let authorUrl=document.getElementById('authorImageSrc').src
-if(document.getElementById('authorImageSrc').src!==authorImage){
-   authorUrl = await uploadAuthor();
-   console.log('changed')
-}
-      ///console.log("Urls Are");
-      //console.log(thumbUrl, authorUrl, headerImageUrl);
-      let content = editor.getData();
-      let heading = document.getElementById("heading").value;
-      let shortContent = document.getElementById("shortContent").value;
-      let authorName = document.getElementById("authorName").value;
-      let blogId = document.getElementById("blogid").value;
-      let data={
-          shortContent: shortContent,
-          thumbImage: thumbUrl,
-          mainHeaderImage: headerImageUrl,
-          authorImage: authorUrl,
-          authorName: authorName,
-          heading: heading,
-          content: content,
-        }
-        axios
-        .put("/blog/editBlog/"+blogId+"/"+token, data, {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-        })
-        .then((res) => {
-      console.log(res);
-    })
-    .catch((err) => {
+    let headerImageUrl = mainHeaderImageForUploadCheck;
+    if (mainHeaderImageForUploadCheck.src !== mainHeaderImage) {
+      headerImageUrl = await uploadMain();
+      console.log("changed");
+    }
+    let authorUrl = mainHeaderImageForUploadCheck;
+    if (mainHeaderImageForUploadCheck !== authorImage) {
+      authorUrl = await uploadAuthor();
+      console.log("changed");
+    }
+    ///console.log("Urls Are");
+    //console.log(thumbUrl, authorUrl, headerImageUrl);
+    let content = editor.getData();
+    let heading = document.getElementById("heading").value;
+    let shortContent = document.getElementById("shortContent").value;
+    let authorName = document.getElementById("authorName").value;
+    let blogId = document.getElementById("blogid").value;
+    let data = {
+      shortContent: shortContent,
+      thumbImage: thumbUrl,
+      mainHeaderImage: headerImageUrl,
+      authorImage: authorUrl,
+      authorName: authorName,
+      heading: heading,
+      content: content,
+    };
+    axios
+      .put("/blog/editBlog/" + blogId + "/" + token, data, {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
         alert(err);
-    });
-}
-else{
-    alert('Fill All Details')
-}
+      });
+  } else {
+    alert("Fill All Details");
+  }
 });
 
 function uploadMain() {
