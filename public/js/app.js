@@ -48,6 +48,8 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
         })
         .then((res) => {
       console.log(res);
+      alert("Success");
+      
     })
     .catch((err) => {
         alert(err);
