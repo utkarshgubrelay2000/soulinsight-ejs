@@ -130,10 +130,7 @@
                     <div class="col-lg-7 col-md-9">
                         <div class="cont text-center">
                             <h2>Build a Beautiful Blog With Ease</h2>
-                            <div class="info">
-                                <p><a href="#0">Alex Smith</a>/<a href="#0">August 6 , 2019</a>/<a href="#0">Web
-                                        Design</a></p>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -158,34 +155,9 @@
   </a>
 </div>
 </p>
-<div class="collapse" style="    
-margin: auto; margin-bottom:32px" id="collapseExample" >
-  <div class="card card-body text-center" style='border:none;' >
-
-		  <input required class='input-blog' name='heading' id='heading' placeholder='Title' >  <br>
-		  <input class='input-blog' name='shortContent' id="shortContent" placeholder='Short Description of your blog' >  <br>
-		 		<form action="/blog/uploadImage" method="post" enctype="multipart/form-data">
-			<h3> Upload A ThumbNail for Your Blog</h3><br>
-			<input type="file" required name="avatar" >
-			<input type="text "   style="display:none" id='idField' name='id'>
-			<button id='submitButton' class='cta-btn' style="display:none">submit</button>
-		  </form>
-	
-			  <div >
         <br>
        
-			  <h4>  Write Blog content here</h4>
-        <div style="width: 600px;height:30px;paddding:10px; margin:auto">
-
-			  <input  id="editor" name='content' value='<h1>Write Your Blog Content</h1>' > 
-
-            
-		<button onclick="myfunction()" class="btn-curve mt-2 rounded-pill">Submit</button>
-			
-        </div>
-
-			</div> <br>
-		</form>
+        
 	</div>
 			
      
@@ -207,7 +179,7 @@ margin: auto; margin-bottom:32px" id="collapseExample" >
                             <div class="item mb-80">
                                 <div class="img">
                                     <a href="blog-details">
-                                        <img src="<%=element.thumbImage%>" alt="">
+                                        <img src="<%=element.mainHeaderImage%>" alt="">
                                     </a>
                                 </div>
                                 <div class="content">
@@ -221,7 +193,7 @@ margin: auto; margin-bottom:32px" id="collapseExample" >
                                             <h4 class="title">
                                             <a href="blog-details"><%=element.title%></a></h4>
                                             <p><%=element.shortContent%> </p>
-                                            <a href="blog/<%=element.blogId%>" class="more">Read More</a>
+                                            <a target='_blank' href="/blog/<%=element.blogId%>" class="more">Read More</a>
                                         </div>
                                         <div class="col-2 valign">
                                             <div class="date">

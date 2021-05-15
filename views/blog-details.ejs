@@ -164,8 +164,8 @@
                         <div class="cont text-center">
                             <h2>Build a Beautiful Blog With Ease</h2>
                             <div class="info">
-                                <p><a href="#0">Alex Smith</a>/<a href="#0">August 6 , 2019</a>/<a href="#0">Web
-                                        Design</a></p>
+                                <p><a href="#0"><%=blog.authorName%>
+                                </a>/<a href="#0"><%=blog.month%> <%=blog.day%></a><a href="#0"></p>
                             </div>
                         </div>
                     </div>
@@ -200,10 +200,10 @@
                                         </div>
                                         <div class="author">
                                             <div class="author-img">
-                                                <img src="img/blog/01.jpg" alt="">
+                                                <img src="<%=blog.authorImage%>" alt="">
                                             </div>
                                             <div class="info">
-                                                <h6><span>author :</span> <%=userDetails.name%></h6>
+                                                <h6><span>author :</span> <%=blog.authorName%></h6>
                                                 <p>the main component of a healthy environment for self esteem is that
                                                     it needs be nurturing. The main compont of a healthy environment.
                                                 </p>
