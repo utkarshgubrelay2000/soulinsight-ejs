@@ -67,7 +67,10 @@ exports.editBlog = (req, res) => {
     authorName,
     thumbImage,
     authorImage,
-    mainHeaderImage, } = req.body;
+    mainHeaderImage,
+    socialAcc,
+    authorDesc
+  } = req.body;
   let blogId = heading.replace(/\s/g, "-");
   let newdate=new Date()
   blog
@@ -83,6 +86,8 @@ exports.editBlog = (req, res) => {
     mainHeaderImage: mainHeaderImage,
     authorImage: authorImage,
     authorName: authorName,
+    socialAcc:socialAcc,
+    authorDesc:authorDesc
     })
     .then((saved) => {
       blog

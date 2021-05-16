@@ -51,6 +51,14 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
     let shortContent = document.getElementById("shortContent").value;
     let authorName = document.getElementById("authorName").value;
     let blogId = document.getElementById("blogid").value;
+    let fb=document.getElementById("fb").value
+      let twitter=document.getElementById("twitter").value
+      let linkendin=document.getElementById("linkendin").value
+      let social={
+        fb:fb,twitter:twitter,linkendin:linkendin
+      }
+      let authorDesc = document.getElementById("authorDesc").value;
+
     let data = {
       shortContent: shortContent,
       thumbImage: thumbUrl,
@@ -59,6 +67,8 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
       authorName: authorName,
       heading: heading,
       content: content,
+      authorDesc:authorDesc,
+          socialAcc:social
     };
     axios
       .put("/blog/editBlog/" + blogId + "/" + token, data, {
