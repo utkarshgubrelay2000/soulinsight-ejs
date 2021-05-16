@@ -390,6 +390,14 @@ margin: 20px;
     width: 100%;
     margin: auto;
 }
+.btn-hover:hover{
+color: wheat;
+}
+.bg-image-size{
+    width: 70vw;
+    height: 50vh;
+    margin-top: -40px!;
+}
 .pad-30{
 padding: 30px;
 }

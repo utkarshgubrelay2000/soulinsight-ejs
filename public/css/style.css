@@ -318,7 +318,8 @@ span, a, a:hover {
   cursor: pointer; }
   .btn-curve:hover:after {
     bottom: -10px;
-    border-radius: 0; }
+    border-radius: 0;
+  color: wheat; }
   .btn-curve:hover span {
     color: #fff; }
   .btn-curve:after {
@@ -372,7 +373,24 @@ span, a, a:hover {
       color: #fff; }
   .btn-curve.btn-radius {
     border-radius: 30px; }
+/* ====================== [ Background data image size ] ====================== */
 
+    .bg-image-size{
+      width: 70vw;
+      height: 50vh;
+      margin-top: -80px !important;
+  }
+  @media (max-width:756px){
+    .bg-image-size{
+      width: 90vw;
+      background-attachment: inherit !important;
+    background-size: contain !important;
+    margin-top: -80px !important;
+    background-position: 0vw !important;
+
+   
+    }
+  }
 /* ====================== [ End Button Style ] ====================== */
 /* ====================== [ 05 Start Cursor Style ] ====================== */
 .cursor {

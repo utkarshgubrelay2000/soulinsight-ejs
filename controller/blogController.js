@@ -15,13 +15,14 @@ exports.postBlog = async (req, res) => {
   // res.render('author',{content:content})
 
   let newdate = new Date();
+  console.log(newdate)
   let blogId = heading.replace(/\s/g, "-");
   // //console.log(newdate.toDateString())
   let newBog = new blog({
     heading: heading,
     content: content,
     blogId: blogId,
-    day: newdate.getDay(),
+    day: newdate.getDate(),
     month: newdate.toLocaleString("default", { month: "long" }),
     shortContent: shortContent,
     userId: userId,
@@ -45,7 +46,7 @@ exports.adminpanel = (req, res) => {
   blog
     .find({})
     .then((blogs) => {
-      admin.find({}).then((userDetails) => {
+      admin.find({}).sort({_id:1}).then((userDetails) => {
         // console.log(userDetails)
         res.render("blogPanel", { blogs: blogs, userDetails: userDetails[0] });
       });
@@ -114,7 +115,7 @@ exports.getAllBlog = (req, res) => {
   blog
     .find({})
     .then((blogs) => {
-      admin.find({}).then((userDetails) => {
+      admin.find({}).sort({_id:-1}).then((userDetails) => {
         console.log(userDetails);
         res.render("blog", { blogs: blogs, userDetails: userDetails[0] });
       });

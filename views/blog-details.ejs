@@ -184,26 +184,28 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-11">
                         <div class="post">
-                            <div class="img bg-img parallaxie"
+                            <div class="img bg-img parallaxie bg-image-size"
                              data-background="<%=blog.thumbImage%>"></div>
-                             <%=console.log(blog.thumbImage)%>
+                           
                             <div class="content pt-20">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-10">
                                         <div class="cont">
                                             <div class="spacial">
-                                                <p><%=blog.heading%></p>
+                                                <h2><%=blog.heading.toUpperCase()%></h2>
+                                                <br>
+                                                <br>
                                             </div>
                                            
 
                                     <div id='blogContent'>
 
                                         </div>
-                                        <div class="author">
-                                            <div class="author-img">
+                                        <div class="author row">
+                                            <div class="author-img  m-auto col-6 col-md-4">
                                                 <img src="<%=blog.authorImage%>" alt="">
                                             </div>
-                                            <div class="info">
+                                            <div class="info col-12 col-md-8">
                                                 <h6><span>author :</span> <%=blog.authorName%></h6>
                                                 <p>the main component of a healthy environment for self esteem is that
                                                     it needs be nurturing. The main compont of a healthy environment.
