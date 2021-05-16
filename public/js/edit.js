@@ -2,21 +2,40 @@ let thumbnailImage = document.getElementById("thumbImageSrc").src;
 let mainHeaderImage = document.getElementById("mainHeaderImageSrc").src;
 let authorImage = document.getElementById("authorImageSrc").src;
 let thumbnailImageForUploadCheck = document.getElementById("thumbImageSrc").src;
-let mainHeaderImageForUploadCheck =
-  document.getElementById("mainHeaderImageSrc").src;
+let mainHeaderImageForUploadCheck =document.getElementById("mainHeaderImageSrc").src;
 let authorImageForUploadCheck = document.getElementById("authorImageSrc").src;
 let token = localStorage.getItem("token");
+const reader = new FileReader();
+const readerthumbnailImage = new FileReader();
+const readermain = new FileReader();
+reader.onload = e => {
+  document.getElementById('authorImageSrc').src = e.target.result;
+}
+readermain.onload = e => {
+  document.getElementById('mainHeaderImageSrc').src = e.target.result;
+}
+readerthumbnailImage.onload = e => {
+  document.getElementById('thumbImageSrc').src = e.target.result;
+}
 document.getElementById("thumbImage").addEventListener("change", (e) => {
   //  console.log(e.target.files[0])
-  thumbnailImage = e.target.files[0];
+  thumbnailImage = e.target.files[0]
+ readerthumbnailImage.readAsDataURL(thumbnailImage);
+ ;
 });
 document.getElementById("authorImage").addEventListener("change", (e) => {
   //console.log(e.target.files[0])
   authorImage = e.target.files[0];
+  reader.readAsDataURL(authorImage);
+  
+  
   console.log(mainHeaderImage, authorImage, thumbnailImage, editor.getData());
 });
 document.getElementById("mainHeaderImage").addEventListener("change", (e) => {
   mainHeaderImage = e.target.files[0];
+  readermain.readAsDataURL(mainHeaderImage);
+  //readermain.readAsDataURL(mainHeaderImage);
+
 });
 //console.log(document.getElementById('mainHeaderImageSrc').src===mainHeaderImage  )
 document.getElementById("submitToCloud").addEventListener("click", async () => {
@@ -35,12 +54,14 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
       console.log("changed");
     }
     let headerImageUrl = mainHeaderImageForUploadCheck;
-    if (mainHeaderImageForUploadCheck.src !== mainHeaderImage) {
+    if (mainHeaderImageForUploadCheck !== mainHeaderImage) {
       headerImageUrl = await uploadMain();
+     // console.log(mainHeaderImageForUploadCheck , mainHeaderImage)
       console.log("changed");
     }
     let authorUrl = mainHeaderImageForUploadCheck;
     if (mainHeaderImageForUploadCheck !== authorImage) {
+      //console.log(mainHeaderImageForUploadCheck , authorImage)
       authorUrl = await uploadAuthor();
       console.log("changed");
     }
