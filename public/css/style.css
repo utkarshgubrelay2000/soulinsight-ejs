@@ -380,6 +380,10 @@ span, a, a:hover {
       height: 50vh;
       margin-top: -80px !important;
   }
+  .card-img-size{
+    height: 60vh;
+
+  }
   @media (max-width:756px){
     .bg-image-size{
       width: 90vw;

@@ -177,11 +177,11 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="posts">
-                         <% blogs.map(element=>{ %>
+                         <% blogs.reverse().map(element=>{ %>
                             <div class="item mb-80">
                                 <div class="img">
                                     <a href="blog-details">
-                                        <img src="<%=element.mainHeaderImage%>" alt="">
+                                        <img class='card-img-size' src="<%=element.mainHeaderImage%>" alt="">
                                     </a>
                                 </div>
                                 <div class="content">

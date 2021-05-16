@@ -207,13 +207,18 @@
                                             </div>
                                             <div class="info col-12 col-md-8">
                                                 <h6><span>author :</span> <%=blog.authorName%></h6>
-                                                <p>the main component of a healthy environment for self esteem is that
-                                                    it needs be nurturing. The main compont of a healthy environment.
-                                                </p>
+                                                <p><%=blog.authorDesc%> </p>
                                                 <div class="social">
-                                                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#0"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#0"><i class="fab fa-behance"></i></a>
+                                                <%if(blog.socialAcc.fb){%>
+                                                    <a target='_blank' href="<%=blog.socialAcc.fb%> "><i class="fab fa-facebook-f"></i></a>
+                                                   <% }%>
+                                                    <%if(blog.socialAcc.twitter){%>
+                                                    <a target='_blank' href="<%=blog.socialAcc.twitter%>"><i class="fab fa-twitter"></i></a>
+                                                   <% }%>
+                                                    <%if(blog.socialAcc.linkendin){%>
+                                                    <a  target='_blank' href="<%=blog.socialAcc.linkedin%>">
+                                                    <i class="fab fa-linkedin-in"></i></a>
+                                                   <% }%>
                                                 </div>
                                             </div>
                                         </div>

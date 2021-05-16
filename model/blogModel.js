@@ -17,6 +17,12 @@ var Schema=new mongoose.Schema({
     authorName:{
         type:String
     },
+    authorDesc:{
+        type:String
+    },
+    socialAcc:{
+        type:Object
+    },
     content:{
         type:String,
         required:true

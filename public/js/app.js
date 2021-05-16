@@ -3,17 +3,35 @@ console.log("app js");
 let thumbnailImage;
 let mainHeaderImage;
 let authorImage;
+const reader = new FileReader();
+const readerthumbnailImage = new FileReader();
+const readermain = new FileReader();
+reader.onload = e => {
+  document.getElementById('authorPreview').src = e.target.result;
+}
+readermain.onload = e => {
+  document.getElementById('mainPreview').src = e.target.result;
+}
+readerthumbnailImage.onload = e => {
+  document.getElementById('thumbPreview').src = e.target.result;
+}
 document.getElementById("thumbImage").addEventListener("change", (e) => {
   //  console.log(e.target.files[0])
   thumbnailImage = e.target.files[0];
+ readerthumbnailImage.readAsDataURL(thumbnailImage);
+
 });
 document.getElementById("authorImage").addEventListener("change", (e) => {
   //console.log(e.target.files[0])
   authorImage = e.target.files[0];
+ reader.readAsDataURL(authorImage);
+
   console.log(mainHeaderImage, authorImage, thumbnailImage,editor.getData());
 });
 document.getElementById("mainHeaderImage").addEventListener("change", (e) => {
   mainHeaderImage = e.target.files[0];
+ readermain.readAsDataURL(mainHeaderImage);
+
 });
 
 
@@ -32,6 +50,13 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
       let heading = document.getElementById("heading").value;
       let shortContent = document.getElementById("shortContent").value;
       let authorName = document.getElementById("authorName").value;
+      let authorDesc = document.getElementById("authorDesc").value;
+      let fb=document.getElementById("fb").value
+      let twitter=document.getElementById("twitter").value
+      let linkendin=document.getElementById("linkendin").value
+      let social={
+        fb:fb,twitter:twitter,linkendin:linkendin
+      }
       let data={
           shortContent: shortContent,
           thumbImage: thumbUrl,
@@ -40,6 +65,8 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
           authorName: authorName,
           heading: heading,
           content: content,
+          authorDesc:authorDesc,
+          socialAcc:social
         }
         axios
         .post("/blog/postBlog", data, {

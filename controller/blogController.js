@@ -11,6 +11,8 @@ exports.postBlog = async (req, res) => {
     thumbImage,
     authorImage,
     mainHeaderImage,
+    authorDesc,
+    socialAcc
   } = req.body;
   // res.render('author',{content:content})
 
@@ -30,6 +32,8 @@ exports.postBlog = async (req, res) => {
     mainHeaderImage: mainHeaderImage,
     authorImage: authorImage,
     authorName: authorName,
+    socialAcc:socialAcc,
+    authorDesc:authorDesc
   });
   newBog
     .save()
