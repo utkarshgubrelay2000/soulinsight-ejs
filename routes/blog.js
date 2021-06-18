@@ -89,7 +89,7 @@ router.delete('/deleteBlog/:id/:token',blogController.deleteBlog,err=>{
   router.get('/',blogController.getAllBlog)
   router.get('/:id',blogController.getBlogById)
   router.get('*', function(req, res){
-    res.status(404).send('what???');
+    res.status(404).send('Not Found');
   });
 
 module.exports=router
