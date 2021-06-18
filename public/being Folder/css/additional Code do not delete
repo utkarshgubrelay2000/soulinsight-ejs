@@ -1,0 +1,115 @@
+    <!-- ==================== Start Slider ==================== -->
+
+        <section class="slider  slide-controls">
+            <div class="swiper-container parallax-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="./img/homebanners/HUMAN.webp" data-overlay-dark="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="HUMAN.html">HUMAN 
+                                               
+                                                    <br> <span class="stroke">CENTRICITY</span> </a>
+                                            </h1>
+                                            <a href="./HUMAN.html" class="dis" data-splitting>Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="./img/homebanners/emotional.webp" data-overlay-dark="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="emotional.html">EMOTIONAL 
+                                                <br> <span class="stroke">DATA</span>
+                                                    </a>
+                                            </h1>
+                                            <a href="emotional.html" class="dis" data-splitting>Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="./img/homebanners/fusion.webp" data-overlay-dark="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="fusion.html">FUSION
+                                                <br> <span class="stroke"></span>
+                                                </a></h1>
+                                            <a href="./fusion.html" class="dis" data-splitting>Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign namaste-image" data-background="./img/homebanners/culture.jpeg" data-overlay-dark="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="ourphilosophy.html">MEANING IN THE 
+                                                <br> <span class="stroke backdrop-manage" >BACKDROP </span>
+                                                  OF CULTURE</a></h1>
+                                            <a href="./ourphilosophy.html" class="dis" data-splitting>Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="./img/homebanners/outcome.jpg" data-overlay-dark="3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="actions.html">OUTCOMEs
+                                                <br> <span class="stroke">DETERMINE </span> &nbsp;
+                                                    ACTIONS</a></h1>
+                                            <a href="./actions.html" class="dis" data-splitting>Explore More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                
+                </div>
+
+                <div class="social active">
+                    <!-- <span class="icon"><i class="fas fa-share-alt"></i></span> -->
+                    
+                    <a target="_blank" href="https://www.linkedin.com/in/soul-insights-57b284211/">Linkedin</a>
+                    <a target="_blank" href="https://twitter.com/soul_insights">Twitter</a>
+                    <a target="_blank" href=" https://instagram.com/soul_a_HUMAN_insights_studio?igshid=1bp32t6bylqat">
+                      Instagram</a>
+                    <a target="_blank" href=" https://www.facebook.com/SOUL-A-HUMAN-Insights-Studio-106735261573689">
+                        Facebook</a>
+                </div>
+
+                <!-- slider setting -->
+                <div class="swiper-button-next swiper-nav-ctrl next-ctrl">
+                    <i class="fas fa-caret-right"></i>
+                </div>
+                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl">
+                    <i class="fas fa-caret-left"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+
+        <!-- ==================== Start Slider ==================== -->

@@ -83,7 +83,7 @@ $(function () {
 
   var parallaxSlider;
   var parallaxSliderOptions = {
-    speed: 1000,
+    speed: 1200,
     autoplay: true,
     parallax: true,
     loop: true,
@@ -608,6 +608,16 @@ $(window).scroll(function () {
 
 function videoPlayPause() {
   const video = document.getElementById("brandVideo");
+  
+
+  video.style.display = 'block'
+
+  const videoTag = document.getElementById('brandVideo')
+
+ 
+
+videoTag.src="https://www.youtube.com/embed/Px1LyqBfmIw"
+
   if (video.paused) {
     setTimeout(() => {
       video.play();
@@ -620,6 +630,11 @@ function videoPlayPause() {
 
 
 function videoPause() {
-  const video = document.getElementById("brandVideo");
-    video.pause();
+  const videoTag = document.getElementById('brandVideo')
+
+videoTag.src=""
+
+
+
+
 }

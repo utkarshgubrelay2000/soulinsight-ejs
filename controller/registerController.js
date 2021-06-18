@@ -7,6 +7,13 @@ exports.homePage = (req, res) => {
 exports.contact = (req, res) => {
     res.render('contact')
 }
+exports.ourphilosophy = (req, res) => {
+    res.render('ourphilosophy')
+}
+exports.OurSpeciality = (req, res) => {
+    res.render('OurSpeciality')
+}
+
 exports.about = (req, res) => {
     res.render('about')
 }
