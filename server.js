@@ -39,7 +39,7 @@ app.use(express.json())
  app.use('/',registerRouter)
  app.use('/api/admin/',authRouter)
  app.use('/',adminRouter)
- app.use('/blog',blogRouter)
+ app.use('/',blogRouter)
 
 
 

@@ -121,11 +121,12 @@ exports.deleteBlog = (req, res) => {
     });
 };
 exports.getAllBlog = (req, res) => {
+  console.log(req.params)
   blog
     .find({})
     .then((blogs) => {
       admin.find({}).sort({_id:-1}).then((userDetails) => {
-        console.log(userDetails);
+        
         res.render("blog", { blogs: blogs, userDetails: userDetails[0] });
       });
     })
