@@ -121,7 +121,6 @@ exports.deleteBlog = (req, res) => {
     });
 };
 exports.getAllBlog = (req, res) => {
-  console.log(req.params)
   blog
     .find({})
     .then((blogs) => {

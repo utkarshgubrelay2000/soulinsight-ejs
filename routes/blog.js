@@ -86,8 +86,9 @@ router.put('/editBlog/:id/:token',verifyAdmin,blogController.editBlog,err=>{
 router.delete('/deleteBlog/:id/:token',blogController.deleteBlog,err=>{
     console.log('error while signup user')
   })
-  router.get('blogs/:page',blogController.getAllBlog)
-  router.get('blog/:id',blogController.getBlogById)
+  router.get('/blogs?',blogController.getAllBlog)
+ 
+  router.get('/blog/:id',blogController.getBlogById)
   router.get('*', function(req, res){
     res.status(404).send('what???');
   });
