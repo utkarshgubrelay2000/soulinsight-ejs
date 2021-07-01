@@ -76,6 +76,8 @@ document.getElementById("submitToCloud").addEventListener("click", async () => {
         .then((res) => {
       console.log(res);
       alert("Success");
+      window.location.reload();
+
       window.history.back();
       
     })
